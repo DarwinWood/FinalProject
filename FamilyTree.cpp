@@ -53,7 +53,7 @@ void FamilyTree::showGeneration(std::string name)
     node *y = generations[x->generation];
     while(y != NULL)
     {
-        std::cout << "Name: " << y->name << std::endl << "Birthday: " << y->birthMonthString << "/" << y->birthDay << "/" << y->birthYear << std::endl;
+        std::cout << "Name: " << y->name << std::endl << "Birthday: " << y->birthMonth << "/" << y->birthDay << "/" << y->birthYear << std::endl;
         y = y->sameGeneration;
     }
 
